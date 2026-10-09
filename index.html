@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<style>
+    *, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue-deep:   #050d1a;
+  --blue-dark:   #0a1628;
+  --blue-mid:    #0f2545;
+  --blue-accent: #1a4b8c;
+  --blue-bright: #2d7dd2;
+  --blue-glow:   #4a9eff;
+  --blue-light:  #a8d4ff;
+  --white:       #ffffff;
+  --white-soft:  #e8f1fb;
+  --white-dim:   #b0c4de;
+  --grey-muted:  #6a8aaa;
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-serif:   'DM Serif Display', serif;
+  --font-body:    'Inter', sans-serif;
+
+  --radius: 8px;
+  --ease:   0.3s ease;
+  --max-w:  1100px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--blue-deep);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; }
+a   { text-decoration: none; color: inherit; }
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section         { padding: 6rem 0; }
+.section-dark    { background: var(--blue-dark); }
+
+.section-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--blue-glow);
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  letter-spacing: 0.04em;
+  color: var(--white);
+  margin-bottom: 3rem;
+  line-height: 1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: all var(--ease);
+  font-family: var(--font-body);
+}
+.btn-primary {
+  background: var(--blue-bright);
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: var(--blue-glow);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(74,158,255,0.3);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.btn-ghost:hover {
+  border-color: var(--blue-glow);
+  color: var(--blue-glow);
+}
+
+/* Stream pills */
+.stream-pill {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+  border-radius: 100px;
+  transition: all var(--ease);
+  display: inline-block;
+}
+.stream-pill.spotify {
+  background: rgba(30,215,96,0.12);
+  color: #1ed760;
+  border: 1px solid rgba(30,215,96,0.25);
+}
+.stream-pill.spotify:hover { background: rgba(30,215,96,0.22); }
+.stream-pill.apple {
+  background: rgba(252,60,68,0.1);
+  color: #fc3c44;
+  border: 1px solid rgba(252,60,68,0.2);
+}
+.stream-pill.apple:hover { background: rgba(252,60,68,0.2); }
+.stream-pill.yt {
+  background: rgba(255,0,0,0.1);
+  color: #ff4444;
+  border: 1px solid rgba(255,0,0,0.2);
+}
+.stream-pill.yt:hover { background: rgba(255,0,0,0.2); }
+
+@media (max-width: 768px) {
+  .section { padding: 4rem 0; }
+}
+
+</style>
+<body>
+    <h1>
+        Testing Deployment
+    </h1>
+    <marquee>@heisbayour: +23470*******73 has withdrawn 50,000NGN</marquee>
+</body>
+</html>
